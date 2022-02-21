@@ -5,7 +5,11 @@ exports.LABELS = {
 };
 
 exports.SELECTORS = {
-    SUBREGIONS: '.okres a',
+    SUBREGIONS: '.okres [href]',
+    TOTAL_SCHOOLS: '.searched b',
+    SCHOOLS: '.doc_entry .school_name [href]',
 };
 
 exports.RESULTS_PER_PAGE = 20;
+
+exports.OFFSET_QUERY_PARAMETER = 'start';
