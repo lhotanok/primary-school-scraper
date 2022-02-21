@@ -1,0 +1,28 @@
+{
+  "title": "Europe primary schools scraper",
+  "description": "Scrapes primary schools from schulliste.eu and other europian countries domains",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startRegions": {
+      "title": "Start regions",
+      "type": "array",
+      "description": "URLs of regions to start with.",
+      "editor": "requestListSources",
+      "prefill": [
+        { "url": "http://www.schulliste.eu/type/grundschulen/?bundesland=sachsen" }
+      ]
+    },
+    "subRegionNames": {
+      "type": "array",
+      "description": "Names of sub-regions to scrape data from. If no name is provided, all sub-regions are crawled.",
+      "editor": "stringList",
+      "prefill": [
+        "Leipzig"
+      ]
+    }
+  },
+  "required": [
+    "startRegions"
+  ]
+}
