@@ -4,8 +4,8 @@
   "type": "object",
   "schemaVersion": 1,
   "properties": {
-    "startRegions": {
-      "title": "Start regions",
+    "regionUrls": {
+      "title": "Region URLs",
       "type": "array",
       "description": "URLs of regions to start with.",
       "editor": "requestListSources",
@@ -23,6 +23,6 @@
     }
   },
   "required": [
-    "startRegions"
+    "regionUrls"
   ]
 }

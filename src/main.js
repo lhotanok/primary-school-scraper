@@ -1,13 +1,19 @@
 const Apify = require('apify');
+const { LABELS } = require('./constants');
 const { handleStart, handleList, handleDetail } = require('./routes');
 const { initializeRequestQueue } = require('./tools');
 
 const { utils: { log } } = Apify;
 
-Apify.main(async () => {
-    const { startRegions } = await Apify.getInput();
+log.setLevel(log.LEVELS.DEBUG);
 
-    const requestQueue = await initializeRequestQueue(startRegions);
+Apify.main(async () => {
+    const input = await Apify.getInput();
+    log.debug(`Input: ${JSON.stringify(input, null, 2)}`);
+
+    const { regionUrls, subRegionNames } = input;
+
+    const requestQueue = await initializeRequestQueue(regionUrls);
     // const proxyConfiguration = await Apify.createProxyConfiguration();
 
     const crawler = new Apify.CheerioCrawler({
@@ -15,15 +21,18 @@ Apify.main(async () => {
         // proxyConfiguration,
         maxConcurrency: 50,
         handlePageFunction: async (context) => {
-            const { url, userData: { label } } = context.request;
+            const { $, request: { url, userData: { label } } } = context;
             log.info('Page opened.', { label, url });
+
+            await Apify.setValue(`${label || LABELS.START}_PAGE`, $.html(), { contentType: 'text/html' });
+
             switch (label) {
-                case 'LIST':
+                case LABELS.LIST:
                     return handleList(context);
-                case 'DETAIL':
+                case LABELS.DETAIL:
                     return handleDetail(context);
                 default:
-                    return handleStart(context);
+                    return handleStart(context, subRegionNames);
             }
         },
     });
