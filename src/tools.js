@@ -67,7 +67,7 @@ const buildNextPageUrl = (currentRequest) => {
     return nextUrl;
 };
 
-exports = {
+module.exports = {
     initializeRequestQueue,
     enqueueListPage,
     enqueuePaginationPage,
