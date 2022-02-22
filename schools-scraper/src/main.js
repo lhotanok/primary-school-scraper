@@ -1,5 +1,5 @@
 const Apify = require('apify');
-const { LABELS } = require('./constants');
+const { LABELS, SCHOOLS_RESULT } = require('./constants');
 const { handleStart, handleList, handleDetail } = require('./routes');
 const { initializeRequestQueue } = require('./tools');
 
@@ -10,6 +10,9 @@ log.setLevel(log.LEVELS.DEBUG);
 Apify.main(async () => {
     const input = await Apify.getInput();
     log.debug(`Input: ${JSON.stringify(input, null, 2)}`);
+
+    const schoolsResult = await Apify.getValue(SCHOOLS_RESULT) || [];
+    Apify.events.on('persistState', async () => Apify.setValue(SCHOOLS_RESULT, schoolsResult));
 
     const { regionUrls, subRegionNames } = input;
 
@@ -30,7 +33,7 @@ Apify.main(async () => {
                 case LABELS.LIST:
                     return handleList(context);
                 case LABELS.DETAIL:
-                    return handleDetail(context);
+                    return handleDetail(context, schoolsResult);
                 default:
                     return handleStart(context, subRegionNames);
             }

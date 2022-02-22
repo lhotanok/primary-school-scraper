@@ -20,3 +20,5 @@ exports.AT_SIGN_REGEX = /<img src="\/\/applicationv2.just4web.cz\/img\/icon_at.p
 
 exports.RESULTS_PER_PAGE = 20;
 exports.OFFSET_QUERY_PARAMETER = 'start';
+
+exports.SCHOOLS_RESULT = 'SCHOOLS_RESULT';

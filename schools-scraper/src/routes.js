@@ -1,9 +1,19 @@
 const Apify = require('apify');
-const { enqueueListPage, enqueuePaginationPage, enqueueDetailPages, extractSchoolDetailEmails } = require('./tools');
-const { SELECTORS } = require('./constants');
+const {
+    enqueueListPage,
+    enqueuePaginationPage,
+    enqueueDetailPages,
+    extractSchoolDetailEmails,
+} = require('./tools');
+const { SELECTORS, SCHOOLS_RESULT } = require('./constants');
 
 const { utils: { log } } = Apify;
 
+/**
+ *
+ * @param {Apify.CheerioHandlePageInputs} context
+ * @param {String[]} subRegionNames
+ */
 exports.handleStart = async (context, subRegionNames) => {
     const { $, request, crawler: { requestQueue } } = context;
     const subRegionElements = $(SELECTORS.SUBREGIONS);
@@ -30,12 +40,21 @@ exports.handleStart = async (context, subRegionNames) => {
     }
 };
 
+/**
+ *
+ * @param {Apify.CheerioHandlePageInputs} context
+ */
 exports.handleList = async (context) => {
     await enqueueDetailPages(context);
     await enqueuePaginationPage(context);
 };
 
-exports.handleDetail = async ({ request, $ }) => {
+/**
+ *
+ * @param {Apify.CheerioHandlePageInputs} context
+ * @param {any[]} schoolsResult
+ */
+exports.handleDetail = async ({ request, $ }, schoolsResult) => {
     const { url, userData: { regionName } } = request;
 
     const { SCHOOL_NAME, ADDRESS, TELEPHONE } = SELECTORS;
@@ -56,5 +75,10 @@ exports.handleDetail = async ({ request, $ }) => {
         emails,
     };
 
+    log.debug(`school results before push: ${schoolsResult.length}`);
+    schoolsResult.push(schoolDetail);
+    log.debug(`school results after push: ${schoolsResult.length}`);
+
     await Apify.pushData(schoolDetail);
+    await Apify.setValue(SCHOOLS_RESULT, schoolsResult);
 };

@@ -1,8 +1,17 @@
 const Apify = require('apify');
+
+// eslint-disable-next-line no-unused-vars
+const cheerio = require('cheerio');
+
 const { SELECTORS, LABELS, RESULTS_PER_PAGE, OFFSET_QUERY_PARAMETER, AT_SIGN_REGEX, AT_SIGN } = require('./constants');
 
 const { utils: { log } } = Apify;
 
+/**
+ *
+ * @param {{ url: String }[]} startRegions
+ * @returns {Promise<Apify.RequestQueue>}
+ */
 const initializeRequestQueue = async (startRegions) => {
     const requestQueue = await Apify.openRequestQueue();
 
@@ -14,19 +23,29 @@ const initializeRequestQueue = async (startRegions) => {
     return requestQueue;
 };
 
+/**
+ *
+ * @param {String} url
+ * @param {Apify.RequestQueue} requestQueue
+ * @param {any} userData
+ */
 const enqueueListPage = async (url, requestQueue, userData) => {
+    const nextUserData = userData;
+    nextUserData.label = LABELS.LIST;
+
     const request = {
         url,
-        userData: {
-            ...userData,
-            label: LABELS.LIST,
-        },
+        userData: nextUserData,
     };
 
     await requestQueue.addRequest(request);
     log.debug(`Enqueued request: ${JSON.stringify(request, null, 2)}`);
 };
 
+/**
+ *
+ * @param {Apify.CheerioHandlePageInputs} context
+ */
 const enqueuePaginationPage = async ({ $, request, crawler: { requestQueue } }) => {
     const nextUrl = buildNextPageUrl(request);
     const nextOffset = parseInt(nextUrl.searchParams.get(OFFSET_QUERY_PARAMETER), 10);
@@ -40,24 +59,33 @@ const enqueuePaginationPage = async ({ $, request, crawler: { requestQueue } }) 
     }
 };
 
+/**
+ *
+ * @param {Apify.CheerioHandlePageInputs} context
+ */
 const enqueueDetailPages = async ({ $, request: { userData }, crawler: { requestQueue } }) => {
     const schoolElements = $(SELECTORS.SCHOOLS);
 
     const schoolUrls = schoolElements.map((_i, el) => $(el).attr('href')).toArray();
     log.debug(`Extracted ${schoolUrls.length} school urls`);
+    log.debug(`User data in enqueueDetailPages: ${JSON.stringify(userData)}`);
 
     for (const url of schoolUrls) {
+        const nextUserData = userData;
+        nextUserData.label = LABELS.DETAIL;
+
         const request = {
             url,
-            userData: {
-                label: LABELS.DETAIL,
-                regionName: userData.regionName,
-            },
+            userData: nextUserData,
         };
         await requestQueue.addRequest(request);
     }
 };
 
+/**
+ *
+ * @param {Apify.Request} currentRequest
+ */
 const buildNextPageUrl = (currentRequest) => {
     const { url, userData: { currentPage } } = currentRequest;
 
@@ -69,6 +97,10 @@ const buildNextPageUrl = (currentRequest) => {
     return nextUrl;
 };
 
+/**
+ *
+ * @param {cheerio.CheerioAPI} $
+ */
 const extractSchoolDetailEmails = ($) => {
     const emailElements = $(SELECTORS.EMAILS);
 
