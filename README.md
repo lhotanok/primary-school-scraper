@@ -8,7 +8,7 @@ Run `build.bat` script to install required dependencies.
 
 ## Input
 
-Set your input configuration in generated `INPUT.json` file located in `apify_storage/key_value_stores/default` directory. Example input:
+Set your input configuration in the generated `INPUT.json` file located in `apify_storage/key_value_stores/default` directory. Example input:
 
 ```json
 {
@@ -29,4 +29,4 @@ Invoke `run.bat` script or run `apify run -p` directly. `-p` flag stands for `--
 
 ## Output
 
-See `apify_storage/datasets` directory for the individual json files representing scraped results.
+See `apify_storage/datasets` directory with json files representing the individual scraped results.
