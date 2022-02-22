@@ -1,5 +1,5 @@
 const Apify = require('apify');
-const { SELECTORS, LABELS, RESULTS_PER_PAGE, OFFSET_QUERY_PARAMETER } = require('./constants');
+const { SELECTORS, LABELS, RESULTS_PER_PAGE, OFFSET_QUERY_PARAMETER, AT_SIGN_REGEX, AT_SIGN } = require('./constants');
 
 const { utils: { log } } = Apify;
 
@@ -14,12 +14,12 @@ const initializeRequestQueue = async (startRegions) => {
     return requestQueue;
 };
 
-const enqueueListPage = async (url, requestQueue, nextPage) => {
+const enqueueListPage = async (url, requestQueue, userData) => {
     const request = {
         url,
         userData: {
+            ...userData,
             label: LABELS.LIST,
-            currentPage: nextPage,
         },
     };
 
@@ -28,18 +28,19 @@ const enqueueListPage = async (url, requestQueue, nextPage) => {
 };
 
 const enqueuePaginationPage = async ({ $, request, crawler: { requestQueue } }) => {
-    const { userData: { currentPage } } = request;
-
     const nextUrl = buildNextPageUrl(request);
     const nextOffset = parseInt(nextUrl.searchParams.get(OFFSET_QUERY_PARAMETER), 10);
     const totalSchools = parseInt($(SELECTORS.TOTAL_SCHOOLS).text().trim(), 10);
 
+    const nextUserData = request.userData;
+    nextUserData.currentPage++;
+
     if (nextOffset <= totalSchools) {
-        await enqueueListPage(nextUrl.toString(), requestQueue, currentPage + 1);
+        await enqueueListPage(nextUrl.toString(), requestQueue, nextUserData);
     }
 };
 
-const enqueueDetailPages = async ({ $, crawler: { requestQueue } }) => {
+const enqueueDetailPages = async ({ $, request: { userData }, crawler: { requestQueue } }) => {
     const schoolElements = $(SELECTORS.SCHOOLS);
 
     const schoolUrls = schoolElements.map((_i, el) => $(el).attr('href')).toArray();
@@ -50,6 +51,7 @@ const enqueueDetailPages = async ({ $, crawler: { requestQueue } }) => {
             url,
             userData: {
                 label: LABELS.DETAIL,
+                regionName: userData.regionName,
             },
         };
         await requestQueue.addRequest(request);
@@ -67,9 +69,23 @@ const buildNextPageUrl = (currentRequest) => {
     return nextUrl;
 };
 
+const extractSchoolDetailEmails = ($) => {
+    const emailElements = $(SELECTORS.EMAILS);
+
+    const emails = emailElements.map((_i, el) => {
+        const emailHtml = $(el).html();
+        const email = emailHtml.replace(AT_SIGN_REGEX, AT_SIGN);
+        return email;
+    }).toArray();
+
+    const uniqueEmails = Array.from(new Set(emails));
+    return uniqueEmails;
+};
+
 module.exports = {
     initializeRequestQueue,
     enqueueListPage,
     enqueuePaginationPage,
     enqueueDetailPages,
+    extractSchoolDetailEmails,
 };

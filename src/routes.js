@@ -1,5 +1,5 @@
 const Apify = require('apify');
-const { enqueueListPage, enqueuePaginationPage, enqueueDetailPages } = require('./tools');
+const { enqueueListPage, enqueuePaginationPage, enqueueDetailPages, extractSchoolDetailEmails } = require('./tools');
 const { SELECTORS } = require('./constants');
 
 const { utils: { log } } = Apify;
@@ -14,15 +14,19 @@ exports.handleStart = async (context, subRegionNames) => {
         return { url, name };
     }).toArray();
 
-    const requiredSubRegionUrls = subRegions
-        .filter((subRegion) => (subRegionNames ? subRegionNames.includes(subRegion.name) : true))
-        .map((subRegion) => subRegion.url);
+    const requiredSubRegions = subRegions
+        .filter((subRegion) => (subRegionNames ? subRegionNames.includes(subRegion.name) : true));
 
     const totalSchools = $(SELECTORS.TOTAL_SCHOOLS).text().trim();
     log.debug(`Found ${totalSchools} schools`, { url: request.url });
 
-    for (const subRegionUrl of requiredSubRegionUrls) {
-        await enqueueListPage(subRegionUrl, requestQueue, 0);
+    for (const subRegion of requiredSubRegions) {
+        const { url, name } = subRegion;
+        const userData = {
+            regionName: name,
+            currentPage: 0,
+        };
+        await enqueueListPage(url, requestQueue, userData);
     }
 };
 
@@ -32,5 +36,25 @@ exports.handleList = async (context) => {
 };
 
 exports.handleDetail = async ({ request, $ }) => {
-    // Handle details
+    const { url, userData: { regionName } } = request;
+
+    const { SCHOOL_NAME, ADDRESS, TELEPHONE } = SELECTORS;
+
+    const name = $(SCHOOL_NAME).text().trim();
+    const homepage = $(SELECTORS.SCHOOL_HOMEPAGE).attr('href') || null;
+    const address = $(ADDRESS).attr('value') || null;
+    const telephone = $(TELEPHONE).text().trim() || null;
+    const emails = extractSchoolDetailEmails($);
+
+    const schoolDetail = {
+        name,
+        url,
+        homepage,
+        regionName,
+        address,
+        telephone,
+        emails,
+    };
+
+    await Apify.pushData(schoolDetail);
 };
