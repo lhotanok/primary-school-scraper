@@ -8,7 +8,7 @@ Run `build.bat` script to install required dependencies.
 
 ## Input
 
-Set your input configuration in the generated `INPUT.json` file located in `apify_storage/key_value_stores/default` directory. Example input:
+Set your input configuration of `schools-scraper` in the generated `INPUT.json` file located in `apify_storage/key_value_stores/default` directory. Example input:
 
 ```json
 {

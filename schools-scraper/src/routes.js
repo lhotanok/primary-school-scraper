@@ -63,7 +63,7 @@ exports.handleDetail = async ({ request, $ }, schoolsResult) => {
     const homepage = $(SELECTORS.SCHOOL_HOMEPAGE).attr('href') || null;
     const address = $(ADDRESS).attr('value') || null;
     const telephone = $(TELEPHONE).text().trim() || null;
-    const emails = extractSchoolDetailEmails($);
+    const outdatedEmails = extractSchoolDetailEmails($);
 
     const schoolDetail = {
         name,
@@ -72,12 +72,10 @@ exports.handleDetail = async ({ request, $ }, schoolsResult) => {
         regionName,
         address,
         telephone,
-        emails,
+        outdatedEmails,
     };
 
-    log.debug(`school results before push: ${schoolsResult.length}`);
     schoolsResult.push(schoolDetail);
-    log.debug(`school results after push: ${schoolsResult.length}`);
 
     await Apify.pushData(schoolDetail);
     await Apify.setValue(SCHOOLS_RESULT, schoolsResult);

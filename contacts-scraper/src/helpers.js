@@ -85,37 +85,52 @@ module.exports = {
     },
 
     crawlFrames: async (page) => {
+        const socialMedia = [
+            'emails',
+            'phones',
+            'phonesUncertain',
+            'linkedIns',
+            'twitters',
+            'instagrams',
+            'facebooks',
+            'youtubes',
+            'tiktoks',
+            'pinterests',
+            'discords'
+        ];
         const socialHandles = {};
-        page.mainFrame().childFrames().forEach(async (item) => {
-            const html = await item.content();
-            let childSocialHandles = null;
-            const childParseData = {};
+        
+        const frames = page.mainFrame().childFrames();
+        frames.forEach(async (item) => {
             try {
+                const html = await item.content();
+                let childSocialHandles = null;
+                const childParseData = {};
                 childSocialHandles = Apify.utils.social.parseHandlesFromHtml(html, childParseData);
 
-                ['emails', 'phones', 'phonesUncertain', 'linkedIns', 'twitters', 'instagrams', 'facebooks'].forEach((field) => {
+                socialMedia.forEach((field) => {
                     socialHandles[field] = childSocialHandles[field];
                 });
             } catch (e) {
-                log.info(e);
+                log.warning('One of the child frames failed to load', { message: e.toString(), url: page.url() });
             }
         });
 
 
-        ['emails', 'phones', 'phonesUncertain', 'linkedIns', 'twitters', 'instagrams', 'facebooks'].forEach((field) => {
+        socialMedia.forEach((field) => {
             socialHandles[field] = _.uniq(socialHandles[field]);
         });
 
-        return new Promise((resolve) => {
-            resolve(socialHandles);
-        });
+        return socialHandles;
     },
 
     mergeSocial(frames, main) {
         const output = main;
 
         Object.keys(output).forEach((key) => {
-            output[key] = _.uniq(main[key].concat(frames[key]));
+            // If frames[key] is undefined, we get [item, null] from concatenation.
+            const keyResult = frames[key] ? main[key].concat(frames[key]) : main[key];
+            output[key] = _.uniq(keyResult);
         });
 
         return output;
@@ -140,5 +155,39 @@ module.exports = {
 
         const requests = createRequests(requestOptions);
         await addRequestsToQueue({ requests, requestQueue, startUrl, maxRequestsPerStartUrl, requestsPerStartUrlCounter });
+    },
+
+    normalizeUrls: (urls) => {
+        const PROTOCOL_REGEX = /^((.)+:\/\/)/;
+        const BASE_URL_PATTERN = 'http://example.com';
+
+        return urls.map(({ url }) => {
+            const urlWithoutProtocol = url.replace(PROTOCOL_REGEX, '');
+            const relativeUrl = `//${urlWithoutProtocol}`;
+            const normalizedUrl = new URL(relativeUrl, BASE_URL_PATTERN)
+    
+            return normalizedUrl.toString();
+        });
+    },
+
+    async storeResult(domains, result) {
+        if (!result.emails.length) return;
+    
+        const { domain } = result;
+        domains[domain] = domains[domain] || {
+            emails: [],
+        };
+        Object.keys(result).forEach((key) => {
+            const contacts = domains[domain][key];
+            if (contacts) {
+                result[key].forEach((contact) => {
+                    domains[domain][key].push(contact);
+                    domains[domain][key] = Array.from(new Set(domains[domain][key]))
+                })
+            }
+        });
+
+        await Apify.pushData(result);
+        await Apify.setValue('DOMAINS_RESULT', domains);
     },
 };
