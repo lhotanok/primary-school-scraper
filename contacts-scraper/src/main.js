@@ -55,13 +55,13 @@ Apify.main(async () => {
         }
     });
 
-    const proxyConfiguration = await Apify.createProxyConfiguration(proxyConfig);
+    // const proxyConfiguration = await Apify.createProxyConfiguration(proxyConfig);
 
     // Create the crawler
     const crawlerOptions = {
         requestList,
         requestQueue,
-        proxyConfiguration,
+        // proxyConfiguration,
         launchContext: {
             useIncognitoPages: true,
         },
@@ -111,7 +111,8 @@ Apify.main(async () => {
                 depth,
                 referrerUrl: referrer,
                 url,
-                domain: helpers.getDomain(url)
+                domain: helpers.getDomain(url),
+                erasmus: html.match('/erasmus\+/gi').length !== 0,
             };
 
             // Extract and save handles, emails, phone numbers

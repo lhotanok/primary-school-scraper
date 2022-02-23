@@ -173,8 +173,9 @@ module.exports = {
     async storeResult(domains, result) {
         if (!result.emails.length) return;
     
-        const { domain } = result;
+        const { domain, erasmus } = result;
         domains[domain] = domains[domain] || {
+            erasmus,
             emails: [],
         };
         Object.keys(result).forEach((key) => {

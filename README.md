@@ -8,7 +8,7 @@ Run `build.bat` script to install required dependencies.
 
 ## Input
 
-Set your input configuration of `schools-scraper` in the generated `INPUT.json` file located in `apify_storage/key_value_stores/default` directory. Example input:
+Set your input configuration of `schools-scraper` in the generated `INPUT.json` file located in `schools-scraper/apify_storage/key_value_stores/default` directory. Example input:
 
 ```json
 {
@@ -25,7 +25,8 @@ Set your input configuration of `schools-scraper` in the generated `INPUT.json` 
 
 ## Run
 
-Invoke `run.bat` script or run `apify run -p` directly. `-p` flag stands for `--purge` and it's needed to clean previous crawling state properly.
+Invoke `run.bat` script.
+If you want to run the scrapers individually, you need to run `apify run -p` in scraper's root directory. `-p` flag stands for `--purge` and it's needed to clean previous crawling state properly.
 
 ## Output
 
