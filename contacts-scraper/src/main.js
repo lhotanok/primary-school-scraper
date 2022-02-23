@@ -105,6 +105,7 @@ Apify.main(async () => {
             const { userData: { depth, referrer } } = request;
             const url = page.url();
             const html = await page.content();
+            await Apify.setValue('HTML', html, { contentType: 'text/html' });
 
             const result = {
                 html,
@@ -112,7 +113,7 @@ Apify.main(async () => {
                 referrerUrl: referrer,
                 url,
                 domain: helpers.getDomain(url),
-                erasmus: html.match('/erasmus\+/gi').length !== 0,
+                erasmus: html.match(/erasmus/gi),
             };
 
             // Extract and save handles, emails, phone numbers

@@ -29,7 +29,9 @@ function main() {
         if (homepage) {
             const domain = getDomain(homepage);
             if (domainsResult[domain]) {
-                result.emails = domainsResult[domain].emails;
+                const { emails, erasmusList } = domainsResult[domain];
+                result.emails = emails;
+                result.erasmusList = erasmusList;
             }
         }
 

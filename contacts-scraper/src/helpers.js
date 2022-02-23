@@ -27,6 +27,7 @@ function createRequestOptions(sources, userData = {}) {
                 return false;
             }
         })
+        .filter(({ url }) => !url.match(/\.(jp(e)?g|bmp|png|pdf|mp3|m4a|mkv|avi)$/gi))
         .map((rqOpts) => {
             const rqOptsWithData = rqOpts;
             rqOptsWithData.userData = { ...rqOpts.userData, ...userData };
@@ -173,20 +174,24 @@ module.exports = {
     async storeResult(domains, result) {
         if (!result.emails.length) return;
     
-        const { domain, erasmus } = result;
+        const { domain, erasmus, url } = result;
         domains[domain] = domains[domain] || {
-            erasmus,
+            erasmusList: [],
             emails: [],
         };
-        Object.keys(result).forEach((key) => {
-            const contacts = domains[domain][key];
-            if (contacts) {
-                result[key].forEach((contact) => {
-                    domains[domain][key].push(contact);
-                    domains[domain][key] = Array.from(new Set(domains[domain][key]))
-                })
-            }
-        });
+
+        if (erasmus) {
+            domains[domain].erasmusList.push(url);
+            domains[domain].erasmusList = Array.from(new Set(domains[domain].erasmusList))
+        }
+
+        const emails = domains[domain].emails;
+        if (emails) {
+            result.emails.forEach((email) => {
+                domains[domain].emails.push(email);
+                domains[domain].emails = Array.from(new Set(domains[domain].emails))
+            })
+        }
 
         await Apify.pushData(result);
         await Apify.setValue('DOMAINS_RESULT', domains);
