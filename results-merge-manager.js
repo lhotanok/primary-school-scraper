@@ -17,10 +17,14 @@ function getDomain(url) {
 function main() {
     const SCHOOLS_RESULT_PATH = 'schools-scraper/apify_storage/key_value_stores/default/SCHOOLS_RESULT.json';
     const DOMAINS_RESULT_PATH = 'contacts-scraper/apify_storage/key_value_stores/default/DOMAINS_RESULT.json';
+    const CHEERIO_DOMAINS_RESULT_PATH = 'cheerio-contacts-scraper/apify_storage/key_value_stores/default/DOMAINS_RESULT.json';
+
     const RESULTS_PATH = 'RESULTS.json';
+    const CHEERIO_RESULTS_PATH = 'CHEERIO_RESULTS.json';
 
     const schoolsResult = JSON.parse(readFile(SCHOOLS_RESULT_PATH));
     const domainsResult = JSON.parse(readFile(DOMAINS_RESULT_PATH));
+    const cheerioDomainsResult = JSON.parse(readFile(CHEERIO_DOMAINS_RESULT_PATH));
 
     const results = schoolsResult.map((schoolResult) => {
         const result = schoolResult;
@@ -33,6 +37,15 @@ function main() {
                 result.emails = emails;
                 result.erasmusList = erasmusList;
             }
+
+            if (cheerioDomainsResult[domain]) {
+                const { emails, erasmusList } = cheerioDomainsResult[domain];
+                result.emails = emails;
+                result.erasmusList = erasmusList;
+            }
+
+            result.emails = Array.from(new Set(result.emails))
+            result.erasmusList = Array.from(new Set(result.erasmusList))
         }
 
         return result;
@@ -41,6 +54,7 @@ function main() {
     console.log(`Merged ${results.length} school results`);
 
     writeFile(RESULTS_PATH, JSON.stringify(results, null, 2));
+    writeFile(CHEERIO_RESULTS_PATH, JSON.stringify(results, null, 2));
 }
 
 main()

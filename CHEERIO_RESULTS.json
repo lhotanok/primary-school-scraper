@@ -1,0 +1,940 @@
+[
+  {
+    "name": "Ringelnatz-Grundschule Wurzen",
+    "url": "http://www.schulliste.eu/schule/26778-ringelnatz-grundschule-wurzen/",
+    "homepage": "http://www.ringelnatz-gs-wurzen.de",
+    "regionName": "Leipzig",
+    "address": "Querstraße 25, Wurzen",
+    "telephone": "03425/928140",
+    "outdatedEmails": [
+      "sekretariat@ringelnatz-grundschule-wurzen.de"
+    ],
+    "emails": [
+      "schulleitung@ringelnatz-grundschule-wurzen.de",
+      "sekretariat@ringelnatz-grundschule-wurzen.de",
+      "info@nolis.de",
+      "info@vbm-internetconsulting.de",
+      "sekretariat@ringelnatz-grundschule-wurzen.deHomepage",
+      "siegemund@ringelnatz-grundschule-wurzen.de",
+      "dsgvo@lasub.smk.sachsen.de"
+    ],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Colditz",
+    "url": "http://www.schulliste.eu/schule/26735-grundschule-colditz/",
+    "homepage": "http://gs-colditz.de",
+    "regionName": "Leipzig",
+    "address": "Nicolaistraße 8, Colditz",
+    "telephone": "034381-53801",
+    "outdatedEmails": [
+      "grundschule_colditz@t-online.de"
+    ],
+    "emails": [],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Bad Lausick",
+    "url": "http://www.schulliste.eu/schule/26723-grundschule-bad-lausick/",
+    "homepage": "http://grundschule-bad-lausick.de/",
+    "regionName": "Leipzig",
+    "address": "Friedrich-von-Schiller-Straße 1a, Bad Lausick",
+    "telephone": "034345-23061",
+    "outdatedEmails": [
+      "sekretariat@grundschule-bad-lausick.de"
+    ],
+    "emails": [
+      "sekretariat@grundschule-bad-lausick.de",
+      "fvgrundschulebadlausick@gmail.com"
+    ],
+    "erasmusList": []
+  },
+  {
+    "name": "Evangelisches Schulzentrum Muldental (Staatlich anerkannte Ersatzschule)",
+    "url": "http://www.schulliste.eu/schule/26746-grundschule-im-evangelischen-schulzentrum-muldental-staatlich-anerkannte-ersatzschule/",
+    "homepage": "http://www.eva-schulze-mtl.de",
+    "regionName": "Leipzig",
+    "address": "Pestalozzistraße 2/4, Grimma",
+    "telephone": "942111",
+    "outdatedEmails": [
+      "schule@eva-schulze-mtl.de"
+    ],
+    "emails": [
+      "annett.hess@evlks.de",
+      "datenschutzbeauftragter@evlks.de",
+      "schule@eva-schulze-mtl.de",
+      "hortleitung@eva-schulze-mtl.de",
+      "schulclub@eva-schulze-mtl.de",
+      "sekretariat@eva-schulze-mtl.de"
+    ],
+    "erasmusList": [
+      "https://www.eva-schulze-mtl.de/datenschutzerklaerung",
+      "https://www.eva-schulze-mtl.de/login/login",
+      "https://www.eva-schulze-mtl.de/schulzentrum/schulzentrum",
+      "https://www.eva-schulze-mtl.de/schulzentrum/schulanmeldung/schulzentrum/schulanmeldung",
+      "https://www.eva-schulze-mtl.de/schulzentrum/kontakt/schulzentrum/kontakt",
+      "https://www.eva-schulze-mtl.de/schulzentrum/rundgang/schulzentrum/rundgang",
+      "https://www.eva-schulze-mtl.de/schulzentrum/stellenangebote/schulzentrum/stellenangebote",
+      "https://www.eva-schulze-mtl.de/schulzentrum/partner-und-forderer/schulzentrum/partner-und-forderer",
+      "https://www.eva-schulze-mtl.de/schulzentrum/inklusion/schulzentrum/inklusion",
+      "https://www.eva-schulze-mtl.de/schulzentrum/schulkonferenz/schulzentrum/schulkonferenz",
+      "https://www.eva-schulze-mtl.de/schulzentrum/erasmus/schulzentrum/erasmus",
+      "https://www.eva-schulze-mtl.de/schulzentrum/schulsozialarbeit/schulzentrum/schulsozialarbeit",
+      "https://www.eva-schulze-mtl.de/schulzentrum/mitarbeitervertretung/schulzentrum/mitarbeitervertretung",
+      "https://www.eva-schulze-mtl.de/schulzentrum/evas-salon/schulzentrum/evas-salon",
+      "https://www.eva-schulze-mtl.de/schulzentrum/evas-schulcafe/schulzentrum/evas-schulcafe",
+      "https://www.eva-schulze-mtl.de/schulzentrum/schulseelsorge/schulzentrum/schulseelsorge",
+      "https://www.eva-schulze-mtl.de/schulzentrum/presse/schulzentrum/presse",
+      "https://www.eva-schulze-mtl.de/schulzentrum/faq/schulzentrum/faq",
+      "https://www.eva-schulze-mtl.de/grundschule-hort/grundschule-hort",
+      "https://www.eva-schulze-mtl.de/grundschule-hort/aktuelles/2",
+      "https://www.eva-schulze-mtl.de/grundschule-hort/aktuelles/grundschule-hort/aktuelles",
+      "https://www.eva-schulze-mtl.de/grundschule-hort/aktuelles/3",
+      "https://www.eva-schulze-mtl.de/grundschule-hort/aktuelles/6",
+      "https://www.eva-schulze-mtl.de/grundschule-hort/aktuelles/4",
+      "https://www.eva-schulze-mtl.de/grundschule-hort/aktuelles/5",
+      "https://www.eva-schulze-mtl.de/grundschule-hort/kurzkonzept/grundschule-hort/kurzkonzept",
+      "https://www.eva-schulze-mtl.de/downloads/downloads",
+      "https://www.eva-schulze-mtl.de/grundschule-hort/leitung/grundschule-hort/leitung",
+      "https://www.eva-schulze-mtl.de/grundschule-hort/team/grundschule-hort/team",
+      "https://www.eva-schulze-mtl.de/grundschule-hort/demokratische-schule/grundschule-hort/demokratische-schule",
+      "https://www.eva-schulze-mtl.de/grundschule-hort/schulleben/grundschule-hort/schulleben",
+      "https://www.eva-schulze-mtl.de/oberschule-gymnasium/oberschule-gymnasium",
+      "https://www.eva-schulze-mtl.de/oberschule-gymnasium/konzept/oberschule-gymnasium/konzept",
+      "https://www.eva-schulze-mtl.de/oberschule-gymnasium/aktuelles/oberschule-gymnasium/aktuelles",
+      "https://www.eva-schulze-mtl.de/oberschule-gymnasium/aktuelles/2",
+      "https://www.eva-schulze-mtl.de/oberschule-gymnasium/aktuelles/3",
+      "https://www.eva-schulze-mtl.de/oberschule-gymnasium/aktuelles/4",
+      "https://www.eva-schulze-mtl.de/oberschule-gymnasium/aktuelles/5",
+      "https://www.eva-schulze-mtl.de/oberschule-gymnasium/aktuelles/6",
+      "https://www.eva-schulze-mtl.de/oberschule-gymnasium/aktuelles/7",
+      "https://www.eva-schulze-mtl.de/oberschule-gymnasium/leitung/oberschule-gymnasium/leitung",
+      "https://www.eva-schulze-mtl.de/oberschule-gymnasium/evas-koop-gta/oberschule-gymnasium/evas-koop-gta",
+      "https://www.eva-schulze-mtl.de/oberschule-gymnasium/schulleben/oberschule-gymnasium/schulleben",
+      "https://www.eva-schulze-mtl.de/oberschule-gymnasium/team/oberschule-gymnasium/team",
+      "https://www.eva-schulze-mtl.de/oberschule-gymnasium/schuelerinnenvertretung/oberschule-gymnasium/schuelerinnenvertretung",
+      "https://www.eva-schulze-mtl.de/oberschule-gymnasium/bildungsabschluesse/oberschule-gymnasium/bildungsabschluesse",
+      "https://www.eva-schulze-mtl.de/oberschule-gymnasium/projekte/oberschule-gymnasium/projekte",
+      "https://www.eva-schulze-mtl.de/traegerverein-elternarbeit/traegerverein-elternarbeit",
+      "https://www.eva-schulze-mtl.de/traegerverein-elternarbeit/aktuelles/traegerverein-elternarbeit/aktuelles",
+      "https://www.eva-schulze-mtl.de/traegerverein-elternarbeit/aktuelles/3",
+      "https://www.eva-schulze-mtl.de/traegerverein-elternarbeit/aktuelles/2",
+      "https://www.eva-schulze-mtl.de/traegerverein-elternarbeit/aktuelles/4",
+      "https://www.eva-schulze-mtl.de/traegerverein-elternarbeit/vereinsarbeit/traegerverein-elternarbeit/vereinsarbeit",
+      "https://www.eva-schulze-mtl.de/traegerverein-elternarbeit/vorstand/traegerverein-elternarbeit/vorstand",
+      "https://www.eva-schulze-mtl.de/traegerverein-elternarbeit/elternsprecher-innen/traegerverein-elternarbeit/elternsprecher-innen",
+      "https://www.eva-schulze-mtl.de/traegerverein-elternarbeit/elternpflichtstunden/traegerverein-elternarbeit/elternpflichtstunden",
+      "https://www.eva-schulze-mtl.de/impressum/impressum",
+      "https://www.eva-schulze-mtl.de/datenschutzerklaerung/datenschutzerklaerung",
+      "https://www.eva-schulze-mtl.de/aktuelles/anmeldung-von-quereinsteiger-innen"
+    ]
+  },
+  {
+    "name": "Wolfgang-Rosenthal-Grundschule Thallwitz",
+    "url": "http://www.schulliste.eu/schule/26773-wolfgang-rosenthal-grundschule-thallwitz/",
+    "homepage": "http://rosenthal-gs-thallwitz@web.de",
+    "regionName": "Leipzig",
+    "address": "Pappelallee 6, Thallwitz",
+    "telephone": "923311",
+    "outdatedEmails": [
+      "Rosenthal-GS-Thallwitz@web.de"
+    ],
+    "emails": [],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Groitzsch",
+    "url": "http://www.schulliste.eu/schule/26749-grundschule-groitzsch/",
+    "homepage": "http://www.gs-groitzsch.de",
+    "regionName": "Leipzig",
+    "address": "Südstraße 7, Groitzsch",
+    "telephone": "034296/743180",
+    "outdatedEmails": [
+      "sekretariat@gs-groitzsch.de"
+    ],
+    "emails": [
+      "schulleitung@gs-groitzsch.de",
+      "sekretariat@gs-groitzsch.de"
+    ],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Kohren-Sahlis",
+    "url": "http://www.schulliste.eu/schule/26753-grundschule-kohren-sahlis/",
+    "homepage": "http://www.grundschule-kohren-sahlis.de",
+    "regionName": "Leipzig",
+    "address": "Schulstraße 1, Frohburg OT Kohren-Sahlis",
+    "telephone": "034344-61211",
+    "outdatedEmails": [
+      "grundschule-kohren-sahlis@t-online.de"
+    ],
+    "emails": [
+      "info@speisenbildung-leib-und-seele.de"
+    ],
+    "erasmusList": []
+  },
+  {
+    "name": "Löwenzahn-Grundschule Großpösna",
+    "url": "http://www.schulliste.eu/schule/26750-lowenzahn-grundschule-gro-posna/",
+    "homepage": "http://www.gs-grosspoesna.de/",
+    "regionName": "Leipzig",
+    "address": "Hauptstraße 8, Großpösna",
+    "telephone": "141029",
+    "outdatedEmails": [
+      "schulleitung@gs-grosspoesna.de"
+    ],
+    "emails": [
+      "schulleitung@gs-grosspoesna.de"
+    ],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Parthenstein",
+    "url": "http://www.schulliste.eu/schule/26769-grundschule-parthenstein/",
+    "homepage": "http://www.schule-parthenstein.de",
+    "regionName": "Leipzig",
+    "address": "Werner-Seelenbinder-Straße 7, Parthenstein",
+    "telephone": "449818",
+    "outdatedEmails": [
+      "gs-parthenstein@online.de"
+    ],
+    "emails": [],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Beucha",
+    "url": "http://www.schulliste.eu/schule/26733-grundschule-beucha/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Kleinsteinberger Straße 20, Brandis",
+    "telephone": "034292/73059",
+    "outdatedEmails": [
+      "gs-beucha@web.de",
+      "siehe oben oder evelin-angelstein@web.de"
+    ]
+  },
+  {
+    "name": "Grundschule Bennewitz",
+    "url": "http://www.schulliste.eu/schule/26725-grundschule-bennewitz/",
+    "homepage": "http://www.grundschule-deuben.de/",
+    "regionName": "Leipzig",
+    "address": "An der Schule 2, Bennewitz",
+    "telephone": "817522",
+    "outdatedEmails": [
+      "Grundschule-Bennewitz@t-online.de"
+    ],
+    "emails": [],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule \"Pfiffikus\" Böhlen",
+    "url": "http://www.schulliste.eu/schule/26726-grundschule-pfiffikus-bohlen/",
+    "homepage": "http://www.grundschule-boehlen.de",
+    "regionName": "Leipzig",
+    "address": "Fröbelstraße 10, Böhlen",
+    "telephone": "759840",
+    "outdatedEmails": [
+      "GrundschuleBoehlen@web.de"
+    ],
+    "emails": [
+      "GrundschuleBoehlen@web.de",
+      "kinderhort-boehlen@freenet.de",
+      "christine.ross@wegweiser-boehlen.de"
+    ],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Neukirchen",
+    "url": "http://www.schulliste.eu/schule/26729-grundschule-neukirchen/",
+    "homepage": "http://www.gs-neukirchen.com",
+    "regionName": "Leipzig",
+    "address": "Schulweg 3, Borna",
+    "telephone": "919053",
+    "outdatedEmails": [
+      "gsneukirchen@t-online.de"
+    ],
+    "emails": [
+      "gs-neukirchen@saxonia.net",
+      "dsgvo@lasub.smk.sachsen.de",
+      "gs-neukirchen@saxonia.de",
+      "stadtverwaltung@borna.de"
+    ],
+    "erasmusList": []
+  },
+  {
+    "name": "Neuseenland-Grundschule Borna",
+    "url": "http://www.schulliste.eu/schule/26730-neuseenland-grundschule-borna/",
+    "homepage": "http://www.gs-borna-ost.de",
+    "regionName": "Leipzig",
+    "address": "Schulstraße 18, Borna",
+    "telephone": "248849",
+    "outdatedEmails": [
+      "sek.neuseengs@borna.de"
+    ],
+    "emails": [],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Brandis",
+    "url": "http://www.schulliste.eu/schule/26734-grundschule-brandis/",
+    "homepage": "http://grundschule-brandis.de",
+    "regionName": "Leipzig",
+    "address": "Poststraße 8, Brandis",
+    "telephone": "69401",
+    "outdatedEmails": [
+      "grundschule-brandis@t-online.de"
+    ],
+    "emails": [],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Deutzen",
+    "url": "http://www.schulliste.eu/schule/26737-grundschule-deutzen/",
+    "homepage": "http://www.regis-breitingen.de/schuled/index.html",
+    "regionName": "Leipzig",
+    "address": "Barbarastraße 20, Deutzen",
+    "telephone": "219506",
+    "outdatedEmails": [
+      "Grundschule-Deutzen@t-online.de"
+    ],
+    "emails": [],
+    "erasmusList": []
+  },
+  {
+    "name": "Paul-Guenther-Schule Grundschule Geithain",
+    "url": "http://www.schulliste.eu/schule/26741-paul-guenther-schule-grundschule-geithain/",
+    "homepage": "http://www.paul-guenther-schule.de",
+    "regionName": "Leipzig",
+    "address": "Schillerstraße 13, Geithain",
+    "telephone": "42866",
+    "outdatedEmails": [
+      "grundschule-geithain@t-online.de"
+    ],
+    "emails": [
+      "info@paul-guenther-schule.de"
+    ],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Hohburg",
+    "url": "http://www.schulliste.eu/schule/26751-grundschule-hohburg/",
+    "homepage": "http://grundschule.hohburg.de/",
+    "regionName": "Leipzig",
+    "address": "Martin-Luther-Straße 1, Hohburg",
+    "telephone": "43882",
+    "outdatedEmails": [
+      "gs-hohburg@t-online.de"
+    ],
+    "emails": [],
+    "erasmusList": []
+  },
+  {
+    "name": "Bildungszentrum Püchau Grundschule in freier Trägerschaft (Staatlich anerkannte Ersatzschule)",
+    "url": "http://www.schulliste.eu/schule/26754-bildungszentrum-puchau-grundschule-in-freier-tragerschaft-staatlich-anerkannte-ersatzschule/",
+    "homepage": "http://www.bildungszentrum-puechau.de",
+    "regionName": "Leipzig",
+    "address": "Hauptstraße 4, Machern",
+    "telephone": "851621",
+    "outdatedEmails": [
+      "info@bildungszentrum-puechau.de"
+    ],
+    "emails": [],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule am Schlosspark Machern",
+    "url": "http://www.schulliste.eu/schule/26755-grundschule-am-schlosspark-machern/",
+    "homepage": "http://www.grundschule-machern.de",
+    "regionName": "Leipzig",
+    "address": "Goethestraße 1, Machern",
+    "telephone": "77363",
+    "outdatedEmails": [
+      "gs-machern@t-online.de"
+    ],
+    "emails": [],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Markkleeberg-Ost",
+    "url": "http://www.schulliste.eu/schule/26758-grundschule-markkleeberg-ost/",
+    "homepage": "http://www.grundschule-markkleeberg-ost.de",
+    "regionName": "Leipzig",
+    "address": "Rilkestraße 11, Markkleeberg",
+    "telephone": "33399692",
+    "outdatedEmails": [
+      "GS-MbergOst@t-online.de"
+    ],
+    "emails": [],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Markkleeberg-Mitte",
+    "url": "http://www.schulliste.eu/schule/26757-grundschule-markkleeberg-mitte/",
+    "homepage": "http://www.grundschule-markkleeberg-mitte.de",
+    "regionName": "Leipzig",
+    "address": "Raschwitzer Straße 42, Markkleeberg",
+    "telephone": "3502063",
+    "outdatedEmails": [
+      "GSM-M@web.de"
+    ],
+    "emails": [
+      "GSM-M@web.de",
+      "grumami@elliss.de",
+      "michi.storr@yahoo.de",
+      "ssa.gs-markkleeberg-mitte@kv-leipzig.de",
+      "info@schachschule-leipzig.de",
+      "info@bildungskreis-sprachen.de",
+      "hort-wirbelwind@gmx.de",
+      "grumamifoerderverein@gmail.com",
+      "storr@grumami-lernt.de",
+      "dieconstanzeweiss@gmail.com"
+    ],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Lobstädt",
+    "url": "http://www.schulliste.eu/schule/26766-grundschule-lobstadt/",
+    "homepage": "http://www.gs-lobstaedt.de",
+    "regionName": "Leipzig",
+    "address": "Victoriastraße 2, Neukieritzsch",
+    "telephone": "243171",
+    "outdatedEmails": [
+      "gslobstaedt@web.de"
+    ],
+    "emails": [],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Kulkwitz",
+    "url": "http://www.schulliste.eu/schule/26761-grundschule-kulkwitz/",
+    "homepage": "http://www.grundschule-kulkwitz.de",
+    "regionName": "Leipzig",
+    "address": "Ernst-Thälmann-Straße 8, Markranstädt",
+    "telephone": "44165",
+    "outdatedEmails": [
+      "info@grundschule-kulkwitz.de"
+    ],
+    "emails": [
+      "sekretariat@grundschule-kulkwitz.de"
+    ],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Otterwisch",
+    "url": "http://www.schulliste.eu/schule/26768-grundschule-otterwisch/",
+    "homepage": "http://www.grundschule.otterwisch.de",
+    "regionName": "Leipzig",
+    "address": "Stockheimer Straße 6, Otterwisch",
+    "telephone": "22570",
+    "outdatedEmails": [
+      "grundschuleotterwisch@yahoo.de"
+    ],
+    "emails": [],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Neukieritzsch",
+    "url": "http://www.schulliste.eu/schule/26767-grundschule-neukieritzsch/",
+    "homepage": "http://gs-neukieritzsch.de",
+    "regionName": "Leipzig",
+    "address": "Schulplatz 2, Neukieritzsch",
+    "telephone": "50555",
+    "outdatedEmails": [
+      "gs.neukieritzsch@t-online.de"
+    ],
+    "emails": [],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule \"Frederic Joliot-Curie\" Pegau",
+    "url": "http://www.schulliste.eu/schule/26770-grundschule-frederic-joliot-curie-pegau/",
+    "homepage": "http://www.kinder-in-pegau.de/html/grundschule",
+    "regionName": "Leipzig",
+    "address": "Schulstraße 1, Pegau",
+    "telephone": "499804",
+    "outdatedEmails": [
+      "schule-pegau@t-online.de"
+    ],
+    "emails": [
+      "marth@online.de"
+    ],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Naunhof",
+    "url": "http://www.schulliste.eu/schule/26765-grundschule-naunhof/",
+    "homepage": "http://www.naunhof.de",
+    "regionName": "Leipzig",
+    "address": "Schulstraße 6, Naunhof",
+    "telephone": "0342935050",
+    "outdatedEmails": [
+      "gs-naunhof@t-online.de"
+    ],
+    "emails": [],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule",
+    "url": "http://www.schulliste.eu/schule/26777-grundschule-zum-elefanten-kuhren/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Nordstraße 4, Wurzen",
+    "telephone": "40797",
+    "outdatedEmails": [
+      "grundschule-kuehren@web.de"
+    ]
+  },
+  {
+    "name": "Dr.-Margarete-Blank-Grundschule Borsdorf",
+    "url": "http://www.schulliste.eu/schule/26731-dr-margarete-blank-grundschule-panitzsch/",
+    "homepage": "http://www.grundschule-panitzsch.de",
+    "regionName": "Leipzig",
+    "address": "Sommerfelder Straße 6, Borsdorf",
+    "telephone": "034291-86824",
+    "outdatedEmails": [
+      "grundschule-panitzsch@borsdorf.de"
+    ],
+    "emails": [
+      "//info@foerderverein-grundschule-borsdorf.de",
+      "//info@grundschule-borsdorf.de",
+      "info@auto-id-projekt.de",
+      "info@foerderverein-grundschule-borsdorf.de",
+      "info@grundschule-borsdorf.de",
+      "info@parthenstrolche.de"
+    ],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Markranstädt",
+    "url": "http://www.schulliste.eu/schule/26762-grundschule-markranstadt/",
+    "homepage": "http://markranstaedt-info.de/",
+    "regionName": "Leipzig",
+    "address": "Neue Straße 31, Markranstädt",
+    "telephone": "034205/87122",
+    "outdatedEmails": [
+      "sekretariat@.de"
+    ],
+    "emails": [
+      "fans@sc-markranstaedt.de",
+      "autoservicethamm@freenet.de",
+      "info@webgalaxie.com",
+      "info@webgalaxie.de",
+      "info@pflegedienst-engel.de",
+      "info@seniorenpark-gruener-zweig.de",
+      "Info@SRaasch.de",
+      "bgw_universalabbruch@t-online.de",
+      "erdenwerk@lav-markranstaedt.de",
+      "technische.dienste@lav-markranstaedt.de",
+      "info@ddpromotion.de",
+      "Peschel-Naturstein@t-online.de",
+      "naturstein.luetzen@t-online.de",
+      "PhysiotherapieViHa@freenet.de",
+      "info@physio-kind.de",
+      "kontakt@datenschutzbeauftragter-extern.info",
+      "marien-apo_markranstaedt@web.de",
+      "praesident@mcc-oho.de",
+      "Rats-Apotheke@Gesundheitstempel.de",
+      "Schloss.Apotheke@t-online.de",
+      "adler-apotheke-luetzen@t-online.de",
+      "gingko-apotheke@gesundheitstempel.de",
+      "info@hsb-bildung.de",
+      "info@kup-computer.de",
+      "sabine.fanghaenel@gmx.de",
+      "ah.quesitz@de787940.vapn.de",
+      "info@augenoptik-schneiderheinze.de",
+      "info@frank-fahrzeugbau.de",
+      "info@cartis-service.de",
+      "arztpraxis-bilke@vodafonemail.de",
+      "m.mennig@telemed.de",
+      "praxisbwj@online.de",
+      "zwr@thieme.de",
+      "peter.schurig@web.de",
+      "bodenplatte24@web.de",
+      "heizrossi@gmx.de",
+      "info@maurerhandwerk-engelmann.de",
+      "team@mbwv.de",
+      "waldemar.der@aol.com",
+      "bpauli@dr-pauli.de",
+      "D.Baumgaertel@gmx.de",
+      "info@mattersteig-und-co.de",
+      "kontakt@bestattungen-vetter.de",
+      "charisma-moden@web.de",
+      "tkrueger@webgalaxie.de",
+      "u@kup-computer.de",
+      "aha_halle@yahoo.de",
+      "buechereiluetzen@web.de",
+      "info@startiq.de",
+      "info@gaertnerei-ifland.com",
+      "zimmereigruner@aol.com",
+      "info@busunternehmen-riebe.de",
+      "info@eine-runde-sache.de",
+      "info@community-startiq.de",
+      "goehlert-partner@t-online.de",
+      "www.vanni.leipzig@t-online.de",
+      "info@gerhard-bedachung.de",
+      "ksm.schaerschmidt@web.de",
+      "grimmharry@t-online.de",
+      "metab.heidtmann@freenet.de",
+      "michael.bergner@t-online.de",
+      "rothe@ars-rohrreinigung.de",
+      "olaf.brosius@web.de",
+      "schmidt.langendorf@freenet.de",
+      "dasprofil@gmx.net",
+      "info@fahrzeugbau-kerger.de",
+      "antenne-markranstaedt@gmx.de",
+      "bbarufke@gmx.de",
+      "info@likefitness.de",
+      "jan.mueller-kamine@t-online.de",
+      "eva.bernhardt@musikschule-froehlich.de",
+      "office@hclg-leipzig.de",
+      "salonadler@kabelmail.de",
+      "salonbernschein@aol.com",
+      "info@toms-heimtierservice.de",
+      "Dennis.Schuster@t-online.de",
+      "gela65@web.de",
+      "bowlingtreff@bowlingcenter.de",
+      "webmaster@roter-loewe.com",
+      "f-m_brauer@t-online.de",
+      "info@toepferhof-rost.de",
+      "heizungsbau-hoedt@t-online.de",
+      "info@holzbau-kunze.de",
+      "modellbau.rost@web.de",
+      "info@ep-hausmeisterservice.de",
+      "Matthias.Kriegenherdt@t-online.de",
+      "1.lck@web.de",
+      "kerger-jun@gmx.de",
+      "sikoserv@t-online.de",
+      "info@sonnenschutz-schirrmeister.de",
+      "H-P.Heinecke@t-online.de",
+      "gskulkwitz@t-online.de",
+      "info@tanzstudio-kohlmann.de",
+      "sekretariat@grundschule-markranstaedt.de",
+      "sekretariat@grundschule-nils-holgersson.de",
+      "sekretariat@markranstaedt-gymnasium.de",
+      "sekretariat@mittelschule-markranstaedt.de",
+      "Info@nsr-metallbau.de",
+      "info@ssv-kulkwitz.de",
+      "info@ssv-markranstaedt.de",
+      "karingutjahr@t-online.de",
+      "reinboth.frank@gmx.de",
+      "info@steuerberater-steuerberatung-leipzig.de",
+      "deybitel@aol.com",
+      "l.hartzmann@t-online.de",
+      "silke.berger@ergo.de",
+      "p.ratzsch@stadt-markranstaedt.de",
+      "Eva.thieme@mac.com",
+      "gartenverein-reichsbahn@web.de",
+      "info@schloss-altranstaedt.de",
+      "i.matthes@t-online.de",
+      "kcc@kulkwitz.de",
+      "xxx@xxx.de",
+      "webmaster@heimatverein-frankenheim-lindennaundorf.de",
+      "psv@sc-markranstaedt.de",
+      "s.vitz@xn--stadt-markranstdt-4qb.de",
+      "detlef22@t-online.de",
+      "info@rc-leipzig.com",
+      "Katrin@Kleefisch.com",
+      "post@sk-grosslehna.de",
+      "Emaika2001@aol.com",
+      "knappe@kup-computer.de",
+      "aikev@gmx.de",
+      "bern-schwabach@t-online.de",
+      "info@heimatmusikanten.com",
+      "Briefkasten@cc-as.de"
+    ],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Belgershain",
+    "url": "http://www.schulliste.eu/schule/26724-grundschule-belgershain/",
+    "homepage": "http://www.grundschule-belgershain.de/",
+    "regionName": "Leipzig",
+    "address": "Feldstraße 7, Belgershain",
+    "telephone": "50345",
+    "outdatedEmails": [
+      "grundschule.belgershain@t-online.de"
+    ],
+    "emails": [
+      "elternrat.gs.belgershain@gmail.com",
+      "grundschule.belgershain@t-online.de"
+    ],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Borna-Nord",
+    "url": "http://www.schulliste.eu/schule/26727-grundschule-borna-nord/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Sauerbruchstraße 1, Borna",
+    "telephone": "919069",
+    "outdatedEmails": [
+      "sl.nordgs@borna.de"
+    ]
+  },
+  {
+    "name": "Grundschule Borna-West",
+    "url": "http://www.schulliste.eu/schule/26728-grundschule-borna-west/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Deutzener Straße 25, Borna",
+    "telephone": "201303",
+    "outdatedEmails": [
+      "sl.westgs@borna.de"
+    ]
+  },
+  {
+    "name": "Grundschule Trebsen",
+    "url": "http://www.schulliste.eu/schule/26774-grundschule-trebsen/",
+    "homepage": "http://www.grundschule.trebsen.de",
+    "regionName": "Leipzig",
+    "address": "Am Schulberg 28, Trebsen/Mulde",
+    "telephone": "42009",
+    "outdatedEmails": [
+      "gs-trebsen@t-online.de"
+    ],
+    "emails": [],
+    "erasmusList": []
+  },
+  {
+    "name": "Grundschule Hausdorf",
+    "url": "http://www.schulliste.eu/schule/26736-grundschule-hausdorf/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Hauptstraße 34, Colditz",
+    "telephone": "83121",
+    "outdatedEmails": [
+      "grundschule-hausdorf@t-online.de"
+    ]
+  },
+  {
+    "name": "Grundschule Espenhain",
+    "url": "http://www.schulliste.eu/schule/26738-grundschule-espenhain/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Straße der Jugend 5a, Espenhain",
+    "telephone": "67634",
+    "outdatedEmails": [
+      "grundschule-espenhain@t-online.de"
+    ]
+  },
+  {
+    "name": "Grundschule Frohburg",
+    "url": "http://www.schulliste.eu/schule/26740-grundschule-frohburg/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "August-Bebel-Straße 32, Frohburg",
+    "telephone": "60630",
+    "outdatedEmails": [
+      "Grundschule_Frohburg@t-online.de"
+    ]
+  },
+  {
+    "name": "Grundschule \"Bücherwurm\" Grimma",
+    "url": "http://www.schulliste.eu/schule/26742-grundschule-bucherwurm-grimma/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Vorwerkstraße 34, Grimma",
+    "telephone": "707951",
+    "outdatedEmails": [
+      "gs.grimma-west@t-online.de"
+    ]
+  },
+  {
+    "name": "Grundschule Grimma-Hohnstädt",
+    "url": "http://www.schulliste.eu/schule/26744-grundschule-grimma-hohnstadt/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Schillerstraße 6, Grimma",
+    "telephone": "701516",
+    "outdatedEmails": [
+      "gs-grimma-hohnstaedt@web.de"
+    ]
+  },
+  {
+    "name": "Grundschule Großbothen",
+    "url": "http://www.schulliste.eu/schule/26745-grundschule-gro-bothen/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Wilhelm-Ostwald-Straße 6, Grimma",
+    "telephone": "73378",
+    "outdatedEmails": [
+      "gs-grossbothen@freenet.de"
+    ]
+  },
+  {
+    "name": "Grundschule Zschoppach",
+    "url": "http://www.schulliste.eu/schule/26748-grundschule-zschoppach/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Obstlandstraße 35, Grimma",
+    "telephone": "449737",
+    "outdatedEmails": [
+      "Grundschule.Zschoppach@t-online.de"
+    ]
+  },
+  {
+    "name": "Grundschule Nerchau",
+    "url": "http://www.schulliste.eu/schule/26747-grundschule-nerchau/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Wiesental 3, Grimma",
+    "telephone": "40934",
+    "outdatedEmails": [
+      "schulleitung-gsn@nerchau.de"
+    ]
+  },
+  {
+    "name": "Grundschule Kitzscher",
+    "url": "http://www.schulliste.eu/schule/26752-grundschule-kitzscher/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Robert-Koch-Straße 25, Kitzscher",
+    "telephone": "245529",
+    "outdatedEmails": [
+      "sekretariat.gs-kitzscher@t-online.de"
+    ]
+  },
+  {
+    "name": "Grundschule Markkleeberg-West",
+    "url": "http://www.schulliste.eu/schule/26759-grundschule-markkleeberg-west/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Rathausstraße 75, Markkleeberg",
+    "telephone": "3580785",
+    "outdatedEmails": [
+      "grundschule_markkleeberg-west@t-online.de"
+    ]
+  },
+  {
+    "name": "Grundschule Markkleeberg-Großstädteln",
+    "url": "http://www.schulliste.eu/schule/26756-grundschule-markkleeberg-gro-stadteln/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Alte Straße 7, Markkleeberg",
+    "telephone": "75686",
+    "outdatedEmails": [
+      "Grundschule_Grossstaedteln@t-online.de"
+    ]
+  },
+  {
+    "name": "Grundschule \"Nils Holgersson\" Großlehna",
+    "url": "http://www.schulliste.eu/schule/26760-grundschule-nils-holgersson-gro-lehna/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Schwedenstraße 1, Markranstädt",
+    "telephone": "427676",
+    "outdatedEmails": [
+      "grundschule-gl@t-online.de"
+    ]
+  },
+  {
+    "name": "Grundschule Narsdorf",
+    "url": "http://www.schulliste.eu/schule/26764-grundschule-narsdorf/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Untere Dorfstraße 14b, Narsdorf",
+    "telephone": "61990",
+    "outdatedEmails": [
+      "gs.narsdorf@t-online.de"
+    ]
+  },
+  {
+    "name": "Grundschule Rötha",
+    "url": "http://www.schulliste.eu/schule/26772-grundschule-rotha/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "August-Bebel-Straße 42, Rötha",
+    "telephone": "77731",
+    "outdatedEmails": [
+      "Grundschule-Roetha@t-online.de"
+    ]
+  },
+  {
+    "name": "Grundschule Regis-Breitingen",
+    "url": "http://www.schulliste.eu/schule/26771-grundschule-regis-breitingen/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Kirchstraße 4, Regis-Breitingen",
+    "telephone": "91892",
+    "outdatedEmails": [
+      "sekretariatgrundschule@stadt-regis-breitingen.de"
+    ]
+  },
+  {
+    "name": "Diesterweg-Grundschule Wurzen",
+    "url": "http://www.schulliste.eu/schule/26775-diesterweg-grundschule-wurzen/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Eduard-Schulze-Straße 3, Wurzen",
+    "telephone": "8560239",
+    "outdatedEmails": [
+      "gs.diesterweg.wurzen@web.de"
+    ]
+  },
+  {
+    "name": "Grundschule \"An der Sternwarte\" Wurzen",
+    "url": "http://www.schulliste.eu/schule/26776-grundschule-an-der-sternwarte-wurzen/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Rosa-Luxemburg-Straße 20, Wurzen",
+    "telephone": "8560249",
+    "outdatedEmails": [
+      "gs.sternwarte.wurzen@freenet.de"
+    ]
+  },
+  {
+    "name": "Grundschule Zwenkau",
+    "url": "http://www.schulliste.eu/schule/26779-grundschule-zwenkau/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Pestalozzistraße 17, Zwenkau",
+    "telephone": "43075",
+    "outdatedEmails": [
+      "GrundschuleZwenkau@t-online.de"
+    ]
+  },
+  {
+    "name": "Lebenswelt Grundschule Christliche Montessori-Ganztagsschule Zwenkau (Staatlich genehmigte Ersatzschule)",
+    "url": "http://www.schulliste.eu/schule/26780-lebenswelt-grundschule-christliche-montessori-ganztagsschule-zwenkau-staatlich-genehmigte-ersatzschule/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Geschwister-Scholl-Weg 1, Zwenkau",
+    "telephone": "432658",
+    "outdatedEmails": [
+      "info@lebenswelt-schule.de"
+    ]
+  },
+  {
+    "name": "\"Hans Coppi\" Grundschule Frankenhain",
+    "url": "http://www.schulliste.eu/schule/26739-grundschule-hans-coppi-frankenhain/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Hauptstraße 29, Frohburg",
+    "telephone": "43035",
+    "outdatedEmails": [
+      "gs-frankenhain@t-online.de"
+    ]
+  },
+  {
+    "name": "Grundschule",
+    "url": "http://www.schulliste.eu/schule/26743-grundschule-wilhelm-ostwald-grimma/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Platz der Einheit 7, Grimma",
+    "telephone": "945763",
+    "outdatedEmails": [
+      "gs-wilhelm-ostwald@t-online.de"
+    ]
+  },
+  {
+    "name": "Grundschule Mutzschen",
+    "url": "http://www.schulliste.eu/schule/26763-grundschule-mutzschen/",
+    "homepage": null,
+    "regionName": "Leipzig",
+    "address": "Dr.-Robert-Koch-Straße 6, Mutzschen",
+    "telephone": "51280",
+    "outdatedEmails": [
+      "grundschule-mutzschen@t-online.de"
+    ]
+  }
+]

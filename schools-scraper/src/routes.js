@@ -25,7 +25,12 @@ exports.handleStart = async (context, subRegionNames) => {
     }).toArray();
 
     const requiredSubRegions = subRegions
-        .filter((subRegion) => (subRegionNames ? subRegionNames.includes(subRegion.name) : true));
+        .filter((subRegion) => {
+            // No subregion names are set
+            if (!subRegionNames || !subRegionNames.length) return true;
+
+            return subRegionNames.includes(subRegion.name);
+        });
 
     const totalSchools = $(SELECTORS.TOTAL_SCHOOLS).text().trim();
     log.debug(`Found ${totalSchools} schools`, { url: request.url });

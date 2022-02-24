@@ -12,6 +12,7 @@ function writeFile(filePath, content) {
 function main() {
     const SCHOOLS_RESULT_PATH = 'schools-scraper/apify_storage/key_value_stores/default/SCHOOLS_RESULT.json';
     const CONTACTS_INPUT_PATH = 'contacts-scraper/apify_storage/key_value_stores/default/INPUT.json';
+    const CHEERIO_CONTACTS_INPUT_PATH = 'cheerio-contacts-scraper/apify_storage/key_value_stores/default/INPUT.json';
 
     const schoolsResult = JSON.parse(readFile(SCHOOLS_RESULT_PATH));
     const schoolUrls = schoolsResult
@@ -28,6 +29,7 @@ function main() {
     }
 
     writeFile(CONTACTS_INPUT_PATH, JSON.stringify(contactsInput, null, 2));
+    writeFile(CHEERIO_CONTACTS_INPUT_PATH, JSON.stringify(contactsInput, null, 2));
 }
 
 main()
