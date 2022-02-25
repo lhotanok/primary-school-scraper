@@ -25,6 +25,7 @@ function main() {
 
     const contactsInput = {
         startUrls,
+        maxLinkDepth: 1,
         sameDomain: true,
     }
 

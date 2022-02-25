@@ -12,6 +12,17 @@
       "prefill": [
         { "url": "https://apify.com" }
       ]
+    },
+    "sameDomain": {
+      "title": "Stay Within Domain",
+      "type": "boolean",
+      "description": "If set, the actor will only follow links within the same domain as the referring page.",
+      "default": true
+    },
+    "maxLinkDepth": {
+      "title": "Max Link Depth",
+      "type": "number",
+      "default": 1
     }
   },
   "required": [
