@@ -1,4 +1,3 @@
-call npm install -g apify-cli
 call npm install
 
 cd schools-scraper

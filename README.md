@@ -31,3 +31,7 @@ If you want to run the scrapers individually, you need to run `apify run -p` in 
 ## Output
 
 See `apify_storage/datasets` directory with json files representing the individual scraped results.
+
+## Onetime usage in root build.bat 
+
+ call npm install -g apify-cli
