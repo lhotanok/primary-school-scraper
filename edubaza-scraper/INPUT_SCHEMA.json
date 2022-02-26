@@ -1,0 +1,21 @@
+{
+  "title": "Edubaza.pl scraper",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrls": {
+      "title": "Start URLs",
+      "type": "array",
+      "description": "URLs to start with.",
+      "editor": "requestListSources",
+      "prefill": [
+        {
+          "url": "https://mazowieckie.szkolypodstawowe.edubaza.pl/"
+        }
+      ]
+    }
+  },
+  "required": [
+    "startUrls"
+  ]
+}
