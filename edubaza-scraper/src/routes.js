@@ -79,7 +79,7 @@ exports.handleList = async (context) => {
  */
 exports.handleDetail = async (context, edubazaSchools) => {
     // Handle details
-    const { $ , request: { url } } = context;
+    const { $, request: { url } } = context;
 
     const homepage = $('.wo_www [href]').attr('href');
 
@@ -88,7 +88,7 @@ exports.handleDetail = async (context, edubazaSchools) => {
         const school = {
             homepage,
             name,
-            url
+            url,
         };
         // await Apify.pushData(school);
         await Apify.setValue('EDUBAZA_DOMAIN_LIST', edubazaSchools);

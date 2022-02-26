@@ -1,6 +1,8 @@
 const Apify = require('apify');
 const getdomain = require('getdomain');
 
+const { utils: { log } } = Apify;
+
 // const { utils: { log } } = Apify;
 
 exports.getDomain = (url) => getdomain.get(url);
@@ -15,7 +17,16 @@ exports.enqueueLinks = async ($, request, requestQueue, stayWithinDomain, maxLin
         return;
     }
 
-    let links = $('[href]').map((_i, el) => $(el).attr('href')).toArray();
+    const currentUrl = new URL(url);
+
+    let links = $('[href]').map((_i, el) => $(el).attr('href')).toArray()
+        .filter((link) => link)
+        .map((link) => {
+            if (link[0] === '/') {
+                log.info(`Relative link transformed to: ${currentUrl.origin}${link}`);
+                return `${currentUrl.origin}${link}`;
+            }
+        });
 
     if (stayWithinDomain) {
         links = filterSameDomainLinks(links, url);
@@ -32,10 +43,10 @@ exports.enqueueLinks = async ($, request, requestQueue, stayWithinDomain, maxLin
 };
 
 exports.storeResult = async (domains, result) => {
-    //if (result.emails.length === 0) {
+    // if (result.emails.length === 0) {
+    //  return;
+    // }
 
-      //  return;
-    //}
     const { domain, erasmus, url } = result;
     domains[domain] = domains[domain] || {
         erasmusList: [],
@@ -56,7 +67,7 @@ exports.storeResult = async (domains, result) => {
     }
 
     // await Apify.pushData(result);
-    // await Apify.setValue('DOMAINS_RESULT', domains);
+    await Apify.setValue('DOMAINS_RESULT', domains);
 };
 
 const filterSameDomainLinks = (links, url) => {
