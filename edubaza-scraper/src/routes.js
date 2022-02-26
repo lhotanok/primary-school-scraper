@@ -15,7 +15,7 @@ exports.handleStart = async (context) => {
     const nextButtonImageElement = $('[title="Następne"]');
     const parentElement = $(nextButtonImageElement).parent();
     const nextPageUrl = $(parentElement).attr('href');
-    const nextUrl = new URL(`${url}/${nextPageUrl}`);
+    const nextUrl = new URL(`${url}${nextPageUrl}`);
 
     const schoolsTotalText = $('.znalezionych').text().trim();
     const schoolsTotal = parseInt(schoolsTotalText.replace(/[^0-9]/g, ''), 10);
