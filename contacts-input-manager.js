@@ -10,7 +10,9 @@ function writeFile(filePath, content) {
 }
 
 function main() {
-    const SCHOOLS_RESULT_PATH = 'schools-scraper/apify_storage/key_value_stores/default/SCHOOLS_RESULT.json';
+    // const SCHOOLS_RESULT_PATH = 'schools-scraper/apify_storage/key_value_stores/default/SCHOOLS_RESULT.json';
+    const SCHOOLS_RESULT_PATH = 'edubaza-scraper/apify_storage/key_value_stores/default/EDUBAZA_DOMAIN_LIST.json';
+
     const CONTACTS_INPUT_PATH = 'contacts-scraper/apify_storage/key_value_stores/default/INPUT.json';
     const CHEERIO_CONTACTS_INPUT_PATH = 'cheerio-contacts-scraper/apify_storage/key_value_stores/default/INPUT.json';
 
