@@ -17,6 +17,8 @@ Apify.main(async () => {
     const crawler = new Apify.CheerioCrawler({
         requestList,
         requestQueue,
+        requestTimeoutSecs: 60,
+        handlePageTimeoutSecs: 60,
         // proxyConfiguration,
         handlePageFunction: async (context) => {
             const { $, request } = context;

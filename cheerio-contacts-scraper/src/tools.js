@@ -32,8 +32,10 @@ exports.enqueueLinks = async ($, request, requestQueue, stayWithinDomain, maxLin
 };
 
 exports.storeResult = async (domains, result) => {
-    if (!result.emails.length) return;
+    //if (result.emails.length === 0) {
 
+      //  return;
+    //}
     const { domain, erasmus, url } = result;
     domains[domain] = domains[domain] || {
         erasmusList: [],
@@ -53,8 +55,8 @@ exports.storeResult = async (domains, result) => {
         });
     }
 
-    await Apify.pushData(result);
-    await Apify.setValue('DOMAINS_RESULT', domains);
+    // await Apify.pushData(result);
+    // await Apify.setValue('DOMAINS_RESULT', domains);
 };
 
 const filterSameDomainLinks = (links, url) => {
