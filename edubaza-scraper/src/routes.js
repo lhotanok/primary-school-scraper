@@ -51,7 +51,22 @@ const enqueueListPageRequests = async (requestQueue, url, schoolsTotal) => {
  */
 exports.handleList = async (context) => {
     // Handle pagination
-    const { request } = context;
+    const { $, request, crawler: { requestQueue } } = context;
+
+    const links = $('.wo_l_tytul [href]');
+    const url = new URL(request.url);
+
+    for (const link of links) {
+        const relativeLink = $(link).attr('href');
+        const nextLink = `${url.origin}/${relativeLink}`;
+
+        await requestQueue.addRequest({
+            url: nextLink,
+            userData: {
+                label: 'DETAIL',
+            },
+        });
+    }
 };
 
 /**
