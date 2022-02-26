@@ -10,6 +10,9 @@ Apify.main(async () => {
     const requestQueue = await initializeRequestQueue(startUrls);
     // const proxyConfiguration = await Apify.createProxyConfiguration();
 
+    const edubazaSchools = await Apify.getValue('EDUBAZA_DOMAIN_LIST') || [];
+    Apify.events.on('persistState', async () => Apify.setValue('EDUBAZA_DOMAIN_LIST', edubazaSchools));
+
     const crawler = new Apify.CheerioCrawler({
         requestQueue,
         // proxyConfiguration,
@@ -21,7 +24,7 @@ Apify.main(async () => {
                 case 'LIST':
                     return handleList(context);
                 case 'DETAIL':
-                    return handleDetail(context);
+                    return handleDetail(context, edubazaSchools);
                 default:
                     return handleStart(context);
             }

@@ -72,7 +72,25 @@ exports.handleList = async (context) => {
 /**
  *
  * @param {Apify.CheerioHandlePageInputs} context
+ * @param {{
+ *  name: string,
+ *  homepage: string,
+ * }[]} edubazaSchools
  */
-exports.handleDetail = async (context) => {
+exports.handleDetail = async (context, edubazaSchools) => {
     // Handle details
+    const { $ } = context;
+
+    const homepage = $('.wo_www [href]').attr('href');
+
+    if (homepage) {
+        const name = $('.tytul').text().trim();
+        const school = {
+            name,
+            homepage,
+        };
+        // await Apify.pushData(school);
+        await Apify.setValue('EDUBAZA_DOMAIN_LIST', edubazaSchools);
+        edubazaSchools.push(school);
+    }
 };
